@@ -3,7 +3,7 @@
  */
 
 var express = require('express')
-    , routes = require('./routes')
+    , index = require('./routes/index')
     , http = require('http')
     , path = require('path');
 
@@ -25,7 +25,8 @@ if ('development' == app.get('env')) {
     app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
+app.get('/', index.index);
+app.get('/hello', index.hello);
 
 http.createServer(app).listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
