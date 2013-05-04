@@ -1,0 +1,3 @@
+Express server listening on port 8888
+[90mGET / [32m200 [90m605ms - 175b[0m
+[90mGET /stylesheets/style.css [32m200 [90m36ms - 110b[0m
